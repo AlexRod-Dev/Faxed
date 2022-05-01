@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "PlayerAnimInstance.h"
 #include "GameFramework/Character.h"
 #include "FaxedCharacter.generated.h"
 
@@ -18,16 +19,34 @@ class AFaxedCharacter : public ACharacter
 	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
+
 public:
 	AFaxedCharacter();
 
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Camera")
 	float BaseTurnRate;
 
 	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Camera")
 	float BaseLookUpRate;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplay")
+	bool bIsCrouching;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
+	bool bIsAnimationBlended;
+
+	UFUNCTION(BlueprintCallable, Category ="Animation")
+	bool IsAnimationBlended();
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category ="Gameplay")
+	float walkSpeed;
+	
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category ="Gameplay")
+	float crouchSpeed;
+
+	
 
 protected:
 
@@ -39,6 +58,7 @@ protected:
 
 	/** Called for side to side input */
 	void MoveRight(float Value);
+
 
 	/** 
 	 * Called via input to turn at a given rate. 
@@ -57,6 +77,15 @@ protected:
 
 	/** Handler for when a touch input stops. */
 	void TouchStopped(ETouchIndex::Type FingerIndex, FVector Location);
+
+	/*Start Crouch, Adjust collider, and decrease walk speed*/
+	void StartCrouch();
+
+	/*Stop Crouch, Adjust collider, and increase walk speed*/
+	void StopCrouch();
+
+	//same as start and stop crouch but toggle mode
+	void ToggleCrouch();
 
 protected:
 	// APawn interface

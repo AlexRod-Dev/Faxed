@@ -14,6 +14,10 @@
 
 AFaxedCharacter::AFaxedCharacter()
 {
+
+	bIsCrouching = false;
+	walkSpeed = 400.0f;
+	crouchSpeed = 200.0f;
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
@@ -37,7 +41,7 @@ AFaxedCharacter::AFaxedCharacter()
 	CameraBoom->SetupAttachment(RootComponent);
 	CameraBoom->TargetArmLength = 300.0f; // The camera follows at this distance behind the character	
 	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
-
+	
 	// Create a follow camera
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
@@ -56,6 +60,11 @@ void AFaxedCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	check(PlayerInputComponent);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+
+	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AFaxedCharacter::StartCrouch);
+	//PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AFaxedCharacter::ToggleCrouch);
+	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &AFaxedCharacter::StopCrouch);
+	
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &AFaxedCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AFaxedCharacter::MoveRight);
@@ -138,3 +147,52 @@ void AFaxedCharacter::MoveRight(float Value)
 		AddMovementInput(Direction, Value);
 	}
 }
+
+void AFaxedCharacter::StartCrouch() {
+	GetCapsuleComponent()->SetCapsuleHalfHeight(48.0f);
+	GetCharacterMovement()->MaxWalkSpeed = crouchSpeed;
+	AFaxedCharacter::Crouch();
+
+	bIsCrouching = true;
+
+}
+
+void AFaxedCharacter::StopCrouch() {
+
+	GetCapsuleComponent()->SetCapsuleHalfHeight(96.0f);
+	GetCharacterMovement()->MaxWalkSpeed = walkSpeed;
+	AFaxedCharacter::UnCrouch();
+
+	bIsCrouching = false;
+}
+
+
+void AFaxedCharacter::ToggleCrouch() {
+	
+	if (bIsCrouching)
+	{
+		GetCapsuleComponent()->SetCapsuleHalfHeight(96.0f);
+		GetCharacterMovement()->MaxWalkSpeed = crouchSpeed;
+		AFaxedCharacter::UnCrouch();
+
+		bIsCrouching = false;
+
+	}
+	else 
+	{
+		GetCapsuleComponent()->SetCapsuleHalfHeight(48.0f);
+		GetCharacterMovement()->MaxWalkSpeed = crouchSpeed;
+		AFaxedCharacter::Crouch();
+
+		bIsCrouching = true;
+
+	}
+
+
+
+}
+
+bool AFaxedCharacter::IsAnimationBlended() {
+	return false;
+}
+
