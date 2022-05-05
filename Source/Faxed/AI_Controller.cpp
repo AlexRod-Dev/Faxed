@@ -3,13 +3,16 @@
 
 #include "AI_Controller.h"
 #include "Perception/AIPerceptionComponent.h"
+#include "AI_Character.h"
+#include "Waypoint.h"
+#include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
+#include "FaxedCharacter.h"
 #include "Perception/AISenseConfig_Sight.h"
 
 AAI_Controller::AAI_Controller()
 {
 	PrimaryActorTick.bCanEverTick = true;
 	
-
 	SightConfig = CreateDefaultSubobject<UAISenseConfig_Sight>(TEXT("Sight Config"));
 	SetPerceptionComponent(*CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("Perception Component")));
 
@@ -23,8 +26,10 @@ AAI_Controller::AAI_Controller()
 	SightConfig->DetectionByAffiliation.bDetectNeutrals = true;
 
 	GetPerceptionComponent()->SetDominantSense(*SightConfig->GetSenseImplementation());
-	//GetPerceptionComponent()->OnPerceptionUpdated.AddDynamic(this, &AAI_Controller::OnPawnDetected);
+	GetPerceptionComponent()->OnPerceptionUpdated.AddDynamic(this, &AAI_Controller::OnPawnDetected);
 	GetPerceptionComponent()->ConfigureSense(*SightConfig);
+
+
 }
 
 void AAI_Controller::BeginPlay()
@@ -50,6 +55,27 @@ void AAI_Controller::OnPossess(APawn* iPawn)
 void AAI_Controller::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
+
+	AAI_Character* aiCharacter = Cast<AAI_Character>(GetPawn());
+	
+
+	if (DistanceToPlayer > AISightRadius)
+	{
+		bIsPlayerDetected = false;
+	}
+
+	//Move to waypoint
+	if (aiCharacter->NextWaypoint != nullptr && bIsPlayerDetected == false) {
+		
+		MoveToActor(aiCharacter->NextWaypoint, 5.0f);
+		
+	}
+	//Move to Player
+	else if (bIsPlayerDetected == true) 
+	{
+		AFaxedCharacter* Player = Cast<AFaxedCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+		MoveToActor(Player, 5.0f);
+	}
 }
 
 FRotator AAI_Controller::GetControlRotation() const
@@ -63,10 +89,16 @@ FRotator AAI_Controller::GetControlRotation() const
 
 }
 
-void AAI_Controller::OnPawnDetected(TArray<AActor*> DetectedPawns)
+void AAI_Controller::OnPawnDetected(const TArray<AActor*>& DetectedPawns)
 {
-	
-}
+	for (size_t i = 0; i < DetectedPawns.Num(); i++)
+	{
+		DistanceToPlayer = GetPawn()->GetDistanceTo(DetectedPawns[i]);
 
+		UE_LOG(LogTemp, Warning, TEXT("Distance: %f"), DistanceToPlayer);
+	}
+
+	bIsPlayerDetected = true;
+}
 
 
