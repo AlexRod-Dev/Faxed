@@ -29,7 +29,7 @@ public:
 		UFUNCTION()
 		void OnPawnDetected(const TArray<AActor*>& DetectedPawns);
 
-		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = AI)
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
 		float AISightRadius = 500.0f;
 
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = AI)
@@ -38,7 +38,7 @@ public:
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = AI)
 		float AILoseSightRadius = AISightRadius + 50.0f;
 
-		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = AI)
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
 		float AIFieldOfView = 90.0f;
 
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = AI)

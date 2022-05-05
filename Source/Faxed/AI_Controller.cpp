@@ -4,6 +4,7 @@
 #include "AI_Controller.h"
 #include "Perception/AIPerceptionComponent.h"
 #include "AI_Character.h"
+#include "Components/PrimitiveComponent.h"
 #include "Waypoint.h"
 #include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 #include "FaxedCharacter.h"
@@ -74,6 +75,7 @@ void AAI_Controller::Tick(float DeltaSeconds)
 	else if (bIsPlayerDetected == true) 
 	{
 		AFaxedCharacter* Player = Cast<AFaxedCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+		
 		MoveToActor(Player, 5.0f);
 	}
 }

@@ -40,3 +40,9 @@ void AAI_Character::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 }
 
+void AAI_Character::GetActorEyesViewPoint(FVector& OutLocation, FRotator& OutRotation) const
+{
+	OutLocation = GetMesh()->GetSocketLocation("HeadSocket");
+	OutRotation = GetMesh()->GetSocketRotation("HeadSocket");
+}
+
