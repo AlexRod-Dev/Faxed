@@ -16,6 +16,8 @@ AAI_Character::AAI_Character()
 
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->RotationRate = FRotator(0.0f,600.0f,0.0f);
+
+
 	
 }
 
@@ -23,6 +25,7 @@ AAI_Character::AAI_Character()
 void AAI_Character::BeginPlay()
 {
 	Super::BeginPlay();
+	
 	
 }
 

@@ -18,6 +18,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class AWaypoint* NextWaypoint;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	class Cone* Fov;
+
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
