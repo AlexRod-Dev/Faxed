@@ -14,6 +14,8 @@ AAI_Controller::AAI_Controller()
 {
 	PrimaryActorTick.bCanEverTick = true;
 	
+	
+
 	SightConfig = CreateDefaultSubobject<UAISenseConfig_Sight>(TEXT("Sight Config"));
 	SetPerceptionComponent(*CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("Perception Component")));
 
@@ -46,11 +48,13 @@ void AAI_Controller::BeginPlay()
 		UE_LOG(LogTemp, Warning, TEXT("Some Problem Occured"));
 	}
 
+	
+
 }
 
-void AAI_Controller::OnPossess(APawn* iPawn)
+void AAI_Controller::OnPossess(APawn* IPawn)
 {
-	Super::OnPossess(iPawn);
+	Super::OnPossess(IPawn);
 }
 
 void AAI_Controller::Tick(float DeltaSeconds)
@@ -74,9 +78,16 @@ void AAI_Controller::Tick(float DeltaSeconds)
 	//Move to Player
 	else if (bIsPlayerDetected == true) 
 	{
+		aiCharacter->ViewCone->SetMaterial(0, aiCharacter->AlertMaterial);
+		
 		AFaxedCharacter* Player = Cast<AFaxedCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 		
 		MoveToActor(Player, 5.0f);
+
+		RestartLevel();
+	
+		
+
 	}
 }
 
@@ -103,4 +114,11 @@ void AAI_Controller::OnPawnDetected(const TArray<AActor*>& DetectedPawns)
 	bIsPlayerDetected = true;
 }
 
+void AAI_Controller::RestartLevel()
+{
+	UWorld* ThisWorld = GetWorld();
+	FString CurrentLevel = ThisWorld->GetMapName();
+	
+	UGameplayStatics::OpenLevel(GetWorld(), "Tutorial");
+}
 

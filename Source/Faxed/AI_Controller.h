@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "AIController.h"
+#include "FaxedCharacter.h"
 #include "AI_Controller.generated.h"
 
 /**
@@ -20,7 +21,7 @@ public:
 
 		virtual void BeginPlay() override;
 
-		virtual void OnPossess(APawn* iPawn) override;
+		virtual void OnPossess(APawn* IPawn) override;
 
 		virtual void Tick(float DeltaSeconds) override;
 
@@ -39,7 +40,7 @@ public:
 		float AILoseSightRadius = AISightRadius + 50.0f;
 
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
-		float AIFieldOfView = 90.0f;
+		float AIFieldOfView = 75.0f;
 
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = AI)
 		class UAISenseConfig_Sight* SightConfig;
@@ -50,8 +51,10 @@ public:
 		UPROPERTY(VisibleAnywhere,BlueprintReadWrite, Category = AI)
 		float DistanceToPlayer = 0.0f;
 
+		bool bDoOnce = false;
 
-
+		void RestartLevel();
+	
 
 
 };
