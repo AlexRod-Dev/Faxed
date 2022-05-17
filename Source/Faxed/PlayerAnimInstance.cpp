@@ -38,7 +38,7 @@ void UPlayerAnimInstance::NativeUpdateAnimation(float DeltaTimeX) {
 			bIsAnimationBlended = PlayerCharacter->IsAnimationBlended();
 			speed = PlayerCharacter->GetVelocity().Size();
 			bIsCrouching = PlayerCharacter->GetMovementComponent()->IsCrouching();
-			UE_LOG(LogTemp, Warning, TEXT("crouching is %s"), (bIsCrouching ? TEXT("true") : TEXT("false")));
+			//UE_LOG(LogTemp, Warning, TEXT("crouching is %s"), (bIsCrouching ? TEXT("true") : TEXT("false")));
 			bIsMoving = PlayerCharacter->GetVelocity().Size() > 0 ? true : false;
 		}
 	}
