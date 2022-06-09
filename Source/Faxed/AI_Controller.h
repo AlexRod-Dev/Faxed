@@ -19,6 +19,8 @@ public:
 
 		AAI_Controller();
 
+		
+
 		virtual void BeginPlay() override;
 
 		virtual void OnPossess(APawn* IPawn) override;
@@ -31,7 +33,7 @@ public:
 		void OnPawnDetected(const TArray<AActor*>& DetectedPawns);
 
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
-		float AISightRadius = 500.0f;
+		float AISightRadius = 1000.0f;
 
 		UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = AI)
 		float AISightAge = 5.0f;

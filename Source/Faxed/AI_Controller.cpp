@@ -81,13 +81,16 @@ void AAI_Controller::Tick(float DeltaSeconds)
 		aiCharacter->ViewCone->SetMaterial(0, aiCharacter->AlertMaterial);
 		
 		AFaxedCharacter* Player = Cast<AFaxedCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+
+		Player->ActivateRagdoll();
 		
 		MoveToActor(Player, 5.0f);
 
-		RestartLevel();
-	
-		
+		Player->bIsCaught = true;
 
+		
+		
+	
 	}
 }
 
@@ -108,17 +111,7 @@ void AAI_Controller::OnPawnDetected(const TArray<AActor*>& DetectedPawns)
 	{
 		DistanceToPlayer = GetPawn()->GetDistanceTo(DetectedPawns[i]);
 
+		bIsPlayerDetected = true;
 		UE_LOG(LogTemp, Warning, TEXT("Distance: %f"), DistanceToPlayer);
 	}
-
-	bIsPlayerDetected = true;
 }
-
-void AAI_Controller::RestartLevel()
-{
-	UWorld* ThisWorld = GetWorld();
-	FString CurrentLevel = ThisWorld->GetMapName();
-	
-	UGameplayStatics::OpenLevel(GetWorld(), "Tutorial");
-}
-

@@ -8,6 +8,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 //////////////////////////////////////////////////////////////////////////
 // AFaxedCharacter
@@ -18,7 +19,7 @@ AFaxedCharacter::AFaxedCharacter()
 	bIsCrouching = false;
 	walkSpeed = 400.0f;
 	crouchSpeed = 200.0f;
-
+	bIsCaught = false;
 
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
@@ -74,10 +75,11 @@ void AFaxedCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
 	// "turn" handles devices that provide an absolute delta, such as a mouse.
 	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("TurnRate", this, &AFaxedCharacter::TurnAtRate);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
-	PlayerInputComponent->BindAxis("LookUpRate", this, &AFaxedCharacter::LookUpAtRate);
+
+	//PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
+	//PlayerInputComponent->BindAxis("TurnRate", this, &AFaxedCharacter::TurnAtRate);
+	//PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
+	//PlayerInputComponent->BindAxis("LookUpRate", this, &AFaxedCharacter::LookUpAtRate);
 
 	// handle touch devices
 	PlayerInputComponent->BindTouch(IE_Pressed, this, &AFaxedCharacter::TouchStarted);
@@ -86,6 +88,8 @@ void AFaxedCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	// VR headset functionality
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AFaxedCharacter::OnResetVR);
 }
+
+
 
 
 void AFaxedCharacter::OnResetVR()
@@ -189,12 +193,40 @@ void AFaxedCharacter::ToggleCrouch() {
 		bIsCrouching = true;
 
 	}
-
-
-
 }
 
 bool AFaxedCharacter::IsAnimationBlended() {
 	return false;
 }
+
+
+
+void AFaxedCharacter::RestartLevel()
+{
+	UWorld* ThisWorld = GetWorld();
+
+	FString CurrentLevel = ThisWorld->GetName();
+	
+	
+	UGameplayStatics::OpenLevel(GetWorld(), *CurrentLevel);
+	
+}
+
+void AFaxedCharacter::ActivateRagdoll()
+{
+	
+	UCapsuleComponent* CapsuleComp = GetCapsuleComponent();
+	CapsuleComp->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	CapsuleComp->SetCollisionResponseToAllChannels(ECR_Ignore);
+
+	GetMesh()->SetCollisionProfileName(TEXT("Ragdoll"));
+	SetActorEnableCollision(true);
+	
+	GetMesh()->SetAllBodiesSimulatePhysics(true);
+	GetMesh()->SetSimulatePhysics(true);
+	GetMesh()->WakeAllRigidBodies();
+	GetMesh()->bBlendPhysics = true;
+}
+
+
 

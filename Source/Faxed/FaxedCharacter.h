@@ -31,23 +31,6 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Camera")
 	float BaseLookUpRate;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplay")
-	bool bIsCrouching;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
-	bool bIsAnimationBlended;
-
-	UFUNCTION(BlueprintCallable, Category ="Animation")
-	bool IsAnimationBlended();
-
-	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category ="Gameplay")
-	float walkSpeed;
-	
-	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category ="Gameplay")
-	float crouchSpeed;
-
-	
-
 protected:
 
 	/** Resets HMD orientation in VR. */
@@ -90,12 +73,40 @@ protected:
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	// End of APawn interface
+	// End of APawn interface 
 
 public:
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplay")
+	bool bIsCrouching;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
+	bool bIsAnimationBlended;
+
+	UFUNCTION(BlueprintCallable, Category ="Animation")
+	bool IsAnimationBlended();
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category ="Gameplay")
+	float walkSpeed;
+	
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category ="Gameplay")
+	float crouchSpeed;
+
+	UPROPERTY(BlueprintReadOnly, Category="Gameplay")
+	bool bIsCaught;
+	
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	
+	
+	UFUNCTION(BlueprintCallable)
+	void RestartLevel();
+
+	UFUNCTION(BlueprintCallable)
+	void ActivateRagdoll();
+	
 };
 

@@ -20,11 +20,11 @@ AAI_Character::AAI_Character()
 
 	FVector ConeScale = FVector();
 	
-	ViewCone = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("View Cone"));
-	ViewCone->SetupAttachment(RootComponent);
-	ViewCone->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-	ViewCone->SetWorldScale3D(ConeScale);
-	ViewCone->SetRelativeScale3D(ConeScale);
+	 ViewCone = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("View Cone"));
+	 ViewCone->SetupAttachment(RootComponent);
+	 ViewCone->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	 ViewCone->SetWorldScale3D(ConeScale);
+	 ViewCone->SetRelativeScale3D(ConeScale);
 	
 	PatrolMaterial = CreateDefaultSubobject<UMaterial>(TEXT("PatrolMaterial"));
 	AlertMaterial = CreateDefaultSubobject<UMaterial>(TEXT("AlertMaterial"));
@@ -58,4 +58,5 @@ void AAI_Character::GetActorEyesViewPoint(FVector& OutLocation, FRotator& OutRot
 	OutLocation = GetMesh()->GetSocketLocation("HeadSocket");
 	OutRotation = GetMesh()->GetSocketRotation("HeadSocket");
 }
+
 

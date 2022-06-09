@@ -5,7 +5,29 @@
     <projectFile>Intermediate/ProjectFiles/Faxed.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f286888-43a4-433a-b014-5d7718191c46" name="Changes" comment="" />
+    <list default="true" id="9f286888-43a4-433a-b014-5d7718191c46" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/AI/AI_Character_BP_backup.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/AI/VisionCone/MyEqsTestingPawn.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/AI/VisionCone/VisionCone.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Gameplay/Game_Over_Widget.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Maps/Level1.umap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Maps/Level3.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Faxed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Faxed/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/AI_Character_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AI/AI_Character_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/AI_Controller_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AI/AI_Controller_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Gameplay/NextLevel.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Gameplay/NextLevel.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/Character_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/Character_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Level2.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level2.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/ThirdPersonExampleMap.umap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Tutorial.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestingGrounds.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Faxed/AI_Character.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/AI_Character.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Faxed/AI_Character.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/AI_Character.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Faxed/AI_Controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/AI_Controller.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Faxed/AI_Controller.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/AI_Controller.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,14 +42,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C++ Project.Faxed">
     <configuration name="Faxed" type="CppProject" factoryName="C++ Project">
       <configuration_1>
@@ -250,7 +272,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652805845318</updated>
-      <workItem from="1652805898582" duration="5135000" />
+      <workItem from="1652805898582" duration="5728000" />
+      <workItem from="1652888455951" duration="5542000" />
+      <workItem from="1653389933818" duration="162000" />
+      <workItem from="1653511722924" duration="2664000" />
+      <workItem from="1653521476950" duration="1689000" />
+      <workItem from="1653557098030" duration="2431000" />
+      <workItem from="1653909527928" duration="1797000" />
+      <workItem from="1654512934754" duration="603000" />
+      <workItem from="1654706586792" duration="1744000" />
+      <workItem from="1654711875511" duration="3381000" />
+      <workItem from="1654716155843" duration="1222000" />
+      <workItem from="1654765832046" duration="3245000" />
     </task>
     <servers />
   </component>
@@ -259,18 +292,18 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/Faxed/AI_Controller.cpp</url>
-          <line>119</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
