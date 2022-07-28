@@ -57,7 +57,7 @@ public:
 
 		void RestartLevel();
 	
-
+		FTimerHandle TimerHandle;
 
 };
 

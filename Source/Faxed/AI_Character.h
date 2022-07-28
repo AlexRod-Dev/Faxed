@@ -18,10 +18,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class AWaypoint* NextWaypoint;
 
-
-	//Cone Mesh Component
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UStaticMeshComponent* ViewCone;
+	
 
 	UPROPERTY(EditAnywhere)
 		class UMaterial* PatrolMaterial;

@@ -32,7 +32,7 @@ AAI_Controller::AAI_Controller()
 	GetPerceptionComponent()->OnPerceptionUpdated.AddDynamic(this, &AAI_Controller::OnPawnDetected);
 	GetPerceptionComponent()->ConfigureSense(*SightConfig);
 
-
+	
 }
 
 void AAI_Controller::BeginPlay()
@@ -73,12 +73,13 @@ void AAI_Controller::Tick(float DeltaSeconds)
 	if (aiCharacter->NextWaypoint != nullptr && bIsPlayerDetected == false) {
 		
 		MoveToActor(aiCharacter->NextWaypoint, 5.0f);
-		
+
+	
 	}
 	//Move to Player
 	else if (bIsPlayerDetected == true) 
 	{
-		aiCharacter->ViewCone->SetMaterial(0, aiCharacter->AlertMaterial);
+		//aiCharacter->ViewCone->SetMaterial(0, aiCharacter->AlertMaterial);
 		
 		AFaxedCharacter* Player = Cast<AFaxedCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 

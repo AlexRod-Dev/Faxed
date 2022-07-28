@@ -6,27 +6,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f286888-43a4-433a-b014-5d7718191c46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/AI/AI_Character_BP_backup.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/AI/VisionCone/MyEqsTestingPawn.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/AI/VisionCone/VisionCone.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Blueprints/Gameplay/Game_Over_Widget.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Maps/Level1.umap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Maps/Level3.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Faxed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Faxed/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/AI_Character_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AI/AI_Character_BP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/AI_Controller_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AI/AI_Controller_BP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Gameplay/NextLevel.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Gameplay/NextLevel.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/AI_Character_BP_backup.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/AI_Controller_BP.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/EnemyAI_AnimBP.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/Waypoint_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AI/Waypoint_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/Enemy_BP.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Gameplay/Game_Over_Widget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Gameplay/Game_Over_Widget.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/Character_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/Character_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/Player_AnimBP.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level1.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Level2.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level2.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/ThirdPersonExampleMap.umap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/Tutorial.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestingGrounds.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Level3.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level3.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/TestingGrounds.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestingGrounds.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Faxed/AI_Character.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/AI_Character.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Faxed/AI_Character.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/AI_Character.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Faxed/AI_Controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/AI_Controller.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/Faxed/AI_Controller.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/AI_Controller.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,6 +281,19 @@
       <workItem from="1654711875511" duration="3381000" />
       <workItem from="1654716155843" duration="1222000" />
       <workItem from="1654765832046" duration="3245000" />
+      <workItem from="1654772990417" duration="1456000" />
+      <workItem from="1655721738269" duration="577000" />
+      <workItem from="1655849710689" duration="1785000" />
+      <workItem from="1655924136781" duration="752000" />
+      <workItem from="1656001203225" duration="18000" />
+      <workItem from="1656005748375" duration="247000" />
+      <workItem from="1656594241895" duration="409000" />
+      <workItem from="1656682068137" duration="610000" />
+      <workItem from="1656709317602" duration="1019000" />
+      <workItem from="1657993847585" duration="1877000" />
+      <workItem from="1658085762347" duration="1189000" />
+      <workItem from="1658695012374" duration="1306000" />
+      <workItem from="1659028884207" duration="1890000" />
     </task>
     <servers />
   </component>
