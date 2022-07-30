@@ -83,11 +83,18 @@ void AAI_Controller::Tick(float DeltaSeconds)
 		
 		AFaxedCharacter* Player = Cast<AFaxedCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 
-		Player->ActivateRagdoll();
+		//change view Cone to Red when detected
+		aiCharacter->PatrolMaterial = aiCharacter->AlertMaterial;
 		
+		Player->bIsCaught = true;
+		
+		//Move AI Character to Player
 		MoveToActor(Player, 5.0f);
 
-		Player->bIsCaught = true;
+		//Activate Player Ragdoll
+		Player->ActivateRagdoll();
+
+	
 
 		
 		

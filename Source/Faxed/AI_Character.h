@@ -20,10 +20,10 @@ public:
 
 	
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 		class UMaterial* PatrolMaterial;
 		
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
 		class UMaterial* AlertMaterial;
 
 

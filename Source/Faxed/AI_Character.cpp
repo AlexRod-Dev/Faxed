@@ -2,6 +2,7 @@
 
 
 #include "AI_Character.h"
+#include "AIController.h"
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
