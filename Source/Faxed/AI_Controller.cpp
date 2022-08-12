@@ -69,13 +69,16 @@ void AAI_Controller::Tick(float DeltaSeconds)
 		bIsPlayerDetected = false;
 	}
 
-	//Move to waypoint
-	if (aiCharacter->NextWaypoint != nullptr && bIsPlayerDetected == false) {
+	if(!StaticEnemy)
+	{
+		//Move to waypoint
+		if (aiCharacter->NextWaypoint != nullptr && bIsPlayerDetected == false) {
 		
-		MoveToActor(aiCharacter->NextWaypoint, 5.0f);
-
-	
+			MoveToActor(aiCharacter->NextWaypoint, 5.0f);
+			
+		}
 	}
+	
 	//Move to Player
 	else if (bIsPlayerDetected == true) 
 	{

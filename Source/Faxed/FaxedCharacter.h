@@ -70,6 +70,8 @@ protected:
 	//same as start and stop crouch but toggle mode
 	void ToggleCrouch();
 
+	
+
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;

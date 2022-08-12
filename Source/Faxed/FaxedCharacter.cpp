@@ -67,6 +67,7 @@ void AFaxedCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AFaxedCharacter::StartCrouch);
 	//PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AFaxedCharacter::ToggleCrouch);
 	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &AFaxedCharacter::StopCrouch);
+
 	
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &AFaxedCharacter::MoveForward);
@@ -194,6 +195,8 @@ void AFaxedCharacter::ToggleCrouch() {
 
 	}
 }
+
+
 
 bool AFaxedCharacter::IsAnimationBlended() {
 	return false;
