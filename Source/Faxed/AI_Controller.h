@@ -4,8 +4,12 @@
 
 #include "CoreMinimal.h"
 #include "AIController.h"
-#include "FaxedCharacter.h"
+#include "FaxedCharacter.h" 
+#include "Perception/AIPerceptionComponent.h"
+#include "BehaviorTree/BehaviorTree.h"
+#include "BehaviorTree/BlackboardComponent.h"
 #include "AI_Controller.generated.h"
+
 
 /**
  * 
@@ -55,6 +59,9 @@ public:
 
 		bool bDoOnce = false;
 
+		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI )
+		bool StaticEnemy = false; // False - static | True - patrol
+	
 		void RestartLevel();
 	
 		FTimerHandle TimerHandle;
