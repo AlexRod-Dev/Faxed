@@ -7,9 +7,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9f286888-43a4-433a-b014-5d7718191c46" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Faxed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Faxed/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/BP_AICharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AI/BP_AICharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/BP_AI_Controller.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AI/BP_AI_Controller.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/BP_StaticAI_Controller.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/BP_AI_Enemy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AI/BP_AI_Enemy.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/BP_PatrolAI_Controller.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AI/BP_PatrolAI_Controller.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/BP_StaticAI_Controller.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AI/BP_StaticAI_Controller.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/StaticEnemyBT.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AI/StaticEnemyBT.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_Character.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level1.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/TestingGrounds.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestingGrounds.umap" afterDir="false" />
     </list>
@@ -290,6 +292,7 @@
       <workItem from="1660327367551" duration="3964000" />
       <workItem from="1660419259449" duration="931000" />
       <workItem from="1660560966706" duration="788000" />
+      <workItem from="1660666443360" duration="1058000" />
     </task>
     <servers />
   </component>
