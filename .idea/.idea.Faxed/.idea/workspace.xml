@@ -7,73 +7,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9f286888-43a4-433a-b014-5d7718191c46" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Faxed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Faxed/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/CollectiblesMenu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Confirm_Selection.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/CreditsMenu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Examples/UI_LevelSelect_Example.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Examples/UI_MainMenu_Example.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Examples/UI_PauseMenu_Confirmation_Example.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Examples/UI_PauseMenu_Example.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Examples/UI_SettingsMenu_Example.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Hovers/MainMenu/UI_Hover_MainMenu_Credits.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Hovers/MainMenu/UI__Hover_MainMenu_Collectibles.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Hovers/MainMenu/UI__Hover_MainMenu_Exit.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Hovers/MainMenu/UI__Hover_MainMenu_Settings.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Hovers/MainMenu/UI__Hover_MainMenu_Start.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Hovers/PauseMenu_Confirmation/UI__Hover_PauseMenu_Confirmation.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Hovers/PauseMenu_Confirmation/UI__Hover_PauseMenu_Quit.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Hovers/PauseMenu_Confirmation/UI__Hover_PauseMenu_Restart.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Hovers/PauseMenu_Confirmation/UI__Hover_PauseMenu_Resume.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Hovers/PauseMenu_Confirmation/UI__Hover_PauseMenu_Settings.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Hovers/Settings/UI__Hover_SettingsMenu_Audio.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Hovers/Settings/UI__Hover_SettingsMenu_Video.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Hovers/UI__Hover_CollectiblesMenu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/Hovers/UI__Hover_LevelSelect.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/LevelSelect/UI_LevelSelect_Background.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/LevelSelect/UI_LevelSelect_Check.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/LevelSelect/UI_LevelSelect_Page1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/LevelSelect/UI_LevelSelect_Page2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/LevelSelect/UI_LevelSelect_Star.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/LevelSelectMenu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/CollectiblesMenu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/ControlsMenu_Controller.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/ControlsMenu_PC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/CreditsMenu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/LevelComplete_Sign.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/LevelSelectMenu1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/LevelSelectMenu2.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/LevelSelectMenu_BG.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/PauseConfirmationMenu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/PauseMenu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/PerfectLevelSign.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/PostItConsole.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/PostItPc.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/SettingsMenu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenuHud/Start_Menu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/MainMenu_Widget.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/SettingsMenu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/UI_LevelSelect_Background.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/UI_MainMenu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/UI_PostIt/PostIt_Console.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/UI_PostIt/PostIt_PC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/UI_PostIt/PostIt_PC_NoShadow_Console.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/UI_PostIt/PostIt_PC_NoShadow_PC.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/UI_PostIt/StartMenu_PostIt_Console.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/MainMenu/UI_PostIt/StartMenu_PostIt_PC.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/BP_AICharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AI/BP_AICharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/BP_AI_Controller.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AI/BP_AI_Controller.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Gameplay/Game_Over_Widget.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_Character.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/BP_StaticAI_Controller.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/MainMenu.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/TestingGrounds.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestingGrounds.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Faxed/AI_Controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/AI_Controller.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Faxed/AI_Controller.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/AI_Controller.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Faxed/FaxedGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/FaxedGameMode.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -349,7 +287,9 @@
       <workItem from="1659793062372" duration="849000" />
       <workItem from="1660155415990" duration="687000" />
       <workItem from="1660242526055" duration="2643000" />
-      <workItem from="1660327367551" duration="3621000" />
+      <workItem from="1660327367551" duration="3964000" />
+      <workItem from="1660419259449" duration="931000" />
+      <workItem from="1660560966706" duration="788000" />
     </task>
     <servers />
   </component>
