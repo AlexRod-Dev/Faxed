@@ -179,7 +179,7 @@ void AFaxedCharacter::ToggleCrouch() {
 	if (bIsCrouching)
 	{
 		GetCapsuleComponent()->SetCapsuleHalfHeight(96.0f);
-		GetCharacterMovement()->MaxWalkSpeed = crouchSpeed;
+		GetCharacterMovement()->MaxWalkSpeed = walkSpeed;
 		AFaxedCharacter::UnCrouch();
 
 		bIsCrouching = false;
