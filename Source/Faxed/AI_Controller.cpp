@@ -5,7 +5,7 @@
 #include "Perception/AIPerceptionComponent.h"
 #include "AI_Character.h"
 #include "Components/PrimitiveComponent.h"
-#include "Waypoint.h"
+//#include "Waypoint.h"
 #include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 #include "FaxedCharacter.h"
 #include "Perception/AISenseConfig_Sight.h"
@@ -69,15 +69,15 @@ void AAI_Controller::Tick(float DeltaSeconds)
 		bIsPlayerDetected = false;
 	}
 
-	if(!StaticEnemy)
-	{
-		//Move to waypoint
-		if (aiCharacter->NextWaypoint != nullptr && bIsPlayerDetected == false) {
-		
-			MoveToActor(aiCharacter->NextWaypoint, 5.0f);
-			
-		}
-	}
+	// if(!StaticEnemy)
+	// {
+	// 	//Move to waypoint
+	// 	if (aiCharacter->NextWaypoint != nullptr && bIsPlayerDetected == false) {
+	// 	
+	// 		MoveToActor(aiCharacter->NextWaypoint, 5.0f);
+	// 		
+	// 	}
+	// }
 	
 	//Move to Player
 	else if (bIsPlayerDetected == true) 

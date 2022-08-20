@@ -15,8 +15,8 @@ public:
 	// Sets default values for this character's properties
 	AAI_Character();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	class AWaypoint* NextWaypoint;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//class AWaypoint* NextWaypoint;
 
 	
 
