@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "PlayerAnimInstance.h"
 #include "GameFramework/Character.h"
+#include "Perception/PawnSensingComponent.h"
+#include "Components/PawnNoiseEmitterComponent.h"
 #include "FaxedCharacter.generated.h"
 
 UCLASS(config=Game)
@@ -101,6 +103,15 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+		//Function to play sfx
+	UFUNCTION(BlueprintCallable, Category ="AI")
+	void ReportNoise(USoundBase* SoundToPlay, float Volume);
+
+		//Pawn Nosie Emitter
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	UPawnNoiseEmitterComponent* PawnNoiseEmitterComponent;
+	
 
 	
 	

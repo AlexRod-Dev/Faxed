@@ -50,6 +50,9 @@ AFaxedCharacter::AFaxedCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
+
+	PawnNoiseEmitterComponent = CreateDefaultSubobject<UPawnNoiseEmitterComponent>(TEXT("PawnNoiseEmitterComp"));
+
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
@@ -137,6 +140,11 @@ void AFaxedCharacter::MoveForward(float Value)
 		// get forward vector
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 		AddMovementInput(Direction, Value);
+
+		if(bIsCrouching)
+		{
+			
+		}
 	}
 }
 
@@ -203,6 +211,19 @@ bool AFaxedCharacter::IsAnimationBlended() {
 }
 
 
+void AFaxedCharacter::ReportNoise(USoundBase* SoundToPlay, float Volume)
+{
+	//if we have a sound to play
+	if(SoundToPlay)
+	{
+		//Play Sound
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(),SoundToPlay, GetActorLocation(), Volume);
+
+		//Report Sound to AI
+		MakeNoise(Volume, this, GetActorLocation());
+			
+	}
+}
 
 void AFaxedCharacter::RestartLevel()
 {
