@@ -17,7 +17,7 @@ AFaxedCharacter::AFaxedCharacter()
 {
 
 	bIsCrouching = false;
-	walkSpeed = 400.0f;
+	walkSpeed = 300.0f;
 	crouchSpeed = 200.0f;
 	bIsCaught = false;
 
@@ -141,10 +141,6 @@ void AFaxedCharacter::MoveForward(float Value)
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 		AddMovementInput(Direction, Value);
 
-		if(bIsCrouching)
-		{
-			
-		}
 	}
 }
 
@@ -160,6 +156,8 @@ void AFaxedCharacter::MoveRight(float Value)
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		// add movement in that direction
 		AddMovementInput(Direction, Value);
+
+		
 	}
 }
 

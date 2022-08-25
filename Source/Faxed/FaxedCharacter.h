@@ -104,6 +104,9 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category ="AI")
+	USoundBase* Footsteps;
+	
 		//Function to play sfx
 	UFUNCTION(BlueprintCallable, Category ="AI")
 	void ReportNoise(USoundBase* SoundToPlay, float Volume);
