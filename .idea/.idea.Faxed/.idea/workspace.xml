@@ -6,18 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f286888-43a4-433a-b014-5d7718191c46" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Faxed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Faxed/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/characters/Player/CharacterPlayer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/characters/Player/CharacterPlayer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/BP_PatrolAI_Controller.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AI/BP_PatrolAI_Controller.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_Character.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_Character.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_Player_Anim.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_Player_Anim.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_Player_AnimNew.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_Player_AnimNew.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/Player_Crouch_Walk_2D.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/Player_Crouch_Walk_2D.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/Level1.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Level1.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/TestingGrounds.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestingGrounds.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Mixamo/Animations/Walking.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Mixamo/Animations/Walking.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Faxed/FaxedCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Level_1_Map.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Level_2_Map.uasset" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,6 +293,7 @@
       <workItem from="1661095669815" duration="2739000" />
       <workItem from="1661204408546" duration="1816000" />
       <workItem from="1661290208441" duration="1247000" />
+      <workItem from="1661963940770" duration="609000" />
     </task>
     <servers />
   </component>
